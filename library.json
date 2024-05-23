@@ -1,0 +1,21 @@
+{
+  "name": "fmt",
+  "version": "10.2.1",
+  "keywords": "string formatting",
+  "description": "{fmt} is an open-source formatting library providing a fast and safe alternative to C stdio and C++ iostreams.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/impulse-internal/fmt"
+  },
+  "authors": [{
+    "name": "fmtlib",
+    "url": "http://fmt.dev"
+  }],
+  "build": {
+    "extraScript": "platformio/src-selection.py",
+    "includeDir": "include",
+    "srcDir": "src"
+  },
+  "frameworks": "*",
+  "platforms": "*"
+}
