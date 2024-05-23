@@ -122,6 +122,11 @@ FMT_FUNC auto write_loc(appender out, loc_value value,
   if (std::has_facet<facet>(locale))
     return std::use_facet<facet>(locale).put(out, value, specs);
   return facet(locale).put(out, value, specs);
+#else
+  std::ignore = out;
+  std::ignore = value;
+  std::ignore = specs;
+  std::ignore = loc;
 #endif
   return false;
 }
